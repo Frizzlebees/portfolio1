@@ -11,10 +11,20 @@ body {
 }
 .home-content {
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	text-align: center;
 	width: 100%;
 	color: white;
-	font-size: 35px;
+}
+.home-content h3,
+.home-content .icon {
+	font-size: 40px;
+}
+.home-content .icon {
+	margin: 10px 0;
+	cursor: pointer;
+}
+.home-content h1 {
+	font-size: 60px;
 }
 /*================ About style ================== */
