@@ -31,7 +31,7 @@ body {
 .home-content a:hover {
 	color: white;
 }
-/*================ About style ================== */
+
 #about {
 	padding-bottom: 20px;
 }
@@ -87,3 +87,15 @@ body {
 		width: 95%;
 	}
 }
+/*================ Navigation style ================== */
+#navIcon > div {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+#nav > #navIcon {
+
+}
+>>>>>>> Create nav icon
