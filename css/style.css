@@ -33,7 +33,7 @@ body {
 }
 /*================ About style ================== */
 #about {
-	height: 100vh;
+	padding-bottom: 20px;
 }
 #about h1 {
 	text-align: center;
@@ -58,11 +58,18 @@ body {
 	margin: 10px 0;
 }
 .about-row {
-	margin: 10px 0;
+	margin: 15px 0;
 }
 .about-row i.icon {
 	width: 10%;
+	font-size: 20px;
+	margin-right: 0;
 }
 .about-row h3 {
 	display: inline;
+	font-size: 20px;
+}
+.about-row p {
+	margin: 5px 0 10px 15%;
+	font-size: 15px;
 }
