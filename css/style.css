@@ -43,9 +43,7 @@ body {
 .about-content {
 	margin: 0 1%;
 }
-.education,
-.hobbies,
-.services {
+.about-column {
 	display: inline-block;
 	width: 31%;
 	margin: 1%;
@@ -72,4 +70,20 @@ body {
 .about-row p {
 	margin: 5px 0 10px 15%;
 	font-size: 15px;
+}
+@media (max-width: 1165px) {
+	.about-column {
+		width: 65%;
+	}
+	.about-content {
+		text-align: center;
+	}
+	.about-row {
+		text-align: left;
+	}
+}
+@media (max-width: 600px) {
+	.about-column {
+		width: 95%;
+	}
 }
