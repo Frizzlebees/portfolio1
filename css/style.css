@@ -55,4 +55,14 @@ body {
 #about h2 {
 	font-size: 30px;
 	text-align: center;
+	margin: 10px 0;
+}
+.about-row {
+	margin: 10px 0;
+}
+.about-row i.icon {
+	width: 10%;
+}
+.about-row h3 {
+	display: inline;
 }
