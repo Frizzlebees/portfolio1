@@ -27,4 +27,16 @@ body {
 .home-content h1 {
 	font-size: 60px;
 }
+.home-content a,
+.home-content a:hover {
+	color: white;
+}
 /*================ About style ================== */
+#about {
+	height: 100vh;
+}
+#about h1 {
+	text-align: center;
+	margin: 20px;
+	font-size: 45px;
+}
