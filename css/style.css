@@ -8,6 +8,7 @@ body {
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
+  z-index: -1;
 }
 .home-content {
 	position: absolute;
@@ -88,6 +89,13 @@ body {
 	}
 }
 /*================ Navigation style ================== */
+#nav {
+  position: fixed;
+  right: 10vh;
+  top: 8vh;
+  z-index: 1;
+}
+
 #navIcon > div {
   width: 30px;
   height: 4px;
@@ -98,4 +106,7 @@ body {
 #nav > #navIcon {
 
 }
->>>>>>> Create nav icon
+/*================ Portfolio style ================== */
+#portfolio {
+  height: 100vh;
+}
