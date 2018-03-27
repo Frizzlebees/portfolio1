@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/animate.css">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
     <!-- Favicons -->
   </head>
   <body>
@@ -47,12 +48,19 @@
     <!-- Portfolio Content -->
     <div id="portfolio">
       <h1>Portfolio</h1>
-      <div class="project one"></div>
-      <div class="project two"></div>
-      <div class="project three"></div>
-      <div class="project four"></div>
-      <div class="project five"></div>
-      <div class="project six"></div>
+      <div class="project one">Project One</div>
+      <div class="ui basic modal projectOneModal">
+        <i class="close icon"></i>
+        <div class="header">
+          Profile Picture
+        </div>
+        <div class="description">Blah Blah Blah</div>
+      </div>
+      <div class="project two">Project Two</div>
+      <div class="project three">Project Three</div>
+      <div class="project four">Project Four</div>
+      <div class="project five">Project Five</div>
+      <div class="project six">Project Six</div>
     </div>
     <!-- About Content -->
     <div id="about">
@@ -119,5 +127,6 @@
     <div id="contact"></div>
     <!-- Event Listeners -->
     <script src="nav.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>

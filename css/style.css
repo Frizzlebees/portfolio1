@@ -142,7 +142,7 @@ body {
   grid-column-gap: 15px;
   grid-template-rows: 1fr 3fr 3fr 1fr;
   grid-row-gap: 15px;
-  background: #cccccc;
+  background: #f2f2f2;
 }
 
 #portfolio h1 {
@@ -184,6 +184,18 @@ body {
 #portfolio .six {
   grid-row: 3 / 4;
   grid-column: 4 / 5;
+}
+
+.modal {
+  margin: auto !important;
+}
+
+.modal .header, .modal .description {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 
