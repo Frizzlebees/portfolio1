@@ -154,6 +154,12 @@ body {
 
 #portfolio div {
   border: solid black 2px;
+  cursor: pointer;
+}
+
+#portfolio img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 #portfolio .one {
@@ -187,7 +193,7 @@ body {
 }
 
 .modal {
-  margin: auto !important;
+  height: 100vh;
 }
 
 .modal .header, .modal .description {
