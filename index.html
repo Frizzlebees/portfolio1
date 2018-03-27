@@ -13,18 +13,80 @@
     <link rel="stylesheet" href="./css/semantic.min.css">
     <link rel="stylesheet" href="./css/animate.css">
     <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
     <!-- Favicons -->
   </head>
   <body>
+    <!-- Nav Content -->    
+    <div id="nav">
+      <div id="navIconBars">
+        <i class="bars icon white inverted big"></i>
+      </div>
+      <div id="navIconClose" class="hidden">
+        <i class="close icon white inverted big"></i>
+      </div> 
+      <div id="menu" class="hidden">
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#portfolio"><li>Portfolio</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#experience"><li>Experience</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
     <!-- Home Content  -->
     <div id="home">
       <div class="home-content">
         <h3>I am Jonathan</h3>
         <h1 class="animated bounceInDown">Photographer</h1>
-        <a href="#about"><i class="angle double down icon animated pulse infinite"></i></a>
+        <a href="#portfolio"><i class="angle double down icon animated pulse infinite"></i></a>
       </div>
     </div>
-    <div id="portfolio"></div>
+    <!-- Portfolio Content -->
+    <div id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="project one">
+        <div class="ui dimmer">
+          <div class="content">
+            <h2 class="ui inverted header">Title</h2>
+            <h5 class="ui inverted header">Blah blah blah</h5>
+          </div>
+        </div>
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+      <div class="ui basic modal projectOneModal">
+        <i class="close icon big"></i>
+        <div class="header">
+          Project 
+        </div>
+        <div class="description scrolling content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+          </p>
+          <p>
+            Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+          </p>
+        </div>
+      </div>
+      <div class="project two">
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+      <div class="project three">
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+      <div class="project four">
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+      <div class="project five">
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+      <div class="project six">
+        <img src="./images/frizzlebee_1024.png" />
+      </div>
+    </div>
     <!-- About Content -->
     <div id="about">
       <h1>About</h1>
@@ -88,5 +150,8 @@
     <div id="skills"></div>
     <div id="experience"></div>
     <div id="contact"></div>
+    <!-- Event Listeners -->
+    <script src="nav.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>

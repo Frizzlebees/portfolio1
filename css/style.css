@@ -8,6 +8,7 @@ body {
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
+  z-index: -1;
 }
 .home-content {
 	position: absolute;
@@ -31,7 +32,7 @@ body {
 .home-content a:hover {
 	color: white;
 }
-/*================ About style ================== */
+/*=============== About style  =================*/
 #about {
 	padding-bottom: 20px;
 }
@@ -87,3 +88,125 @@ body {
 		width: 95%;
 	}
 }
+/*================ Navigation style ================== */
+#nav {
+  position: fixed;
+  right: 10vh;
+  top: 8vh;
+}
+
+.menuView {
+  height: 100vh;
+  width: 40vh;
+  right: 0vh !important;
+  top: 0vh !important;
+  background-color: #262626;
+}
+
+#nav > #navIconBars {
+  z-index: 1;
+  cursor: pointer;
+}
+
+#nav > #navIconClose {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 8vh;
+  right: 45vh;
+}
+
+#menu > ul {
+  margin-top: 8vh;
+}
+
+#menu a {
+  color: inherit;
+}
+
+#menu > ul li {
+  list-style-type: none;
+  margin-bottom: 5vh;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+/*================ Portfolio style ================== */
+#portfolio {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
+  grid-column-gap: 15px;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-row-gap: 15px;
+  background: #f2f2f2;
+}
+
+#portfolio h1 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+#portfolio > div {
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+#portfolio img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#portfolio .one {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+#portfolio .two {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+#portfolio .three {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+}
+
+#portfolio .four {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+#portfolio .five {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+#portfolio .six {
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.modal {
+  height: 100vh;
+}
+
+.dimmer {
+  height: 100%;
+  width: 100%;
+}
+
+.modal .header, .modal .description {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
