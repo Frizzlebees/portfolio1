@@ -152,7 +152,7 @@ body {
   margin-top: 3vh;
 }
 
-#portfolio div {
+#portfolio > div {
   border: solid black 2px;
   cursor: pointer;
 }
@@ -194,6 +194,11 @@ body {
 
 .modal {
   height: 100vh;
+}
+
+.dimmer {
+  height: 100%;
+  width: 100%;
 }
 
 .modal .header, .modal .description {
