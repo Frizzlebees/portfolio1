@@ -1,14 +1,16 @@
-const toggleNavView = function() {
-  document.getElementById('menu').classList.toggle('hidden');
-  document.getElementById('nav').classList.toggle('menuView');
-  document.getElementById('navIconBars').classList.toggle('hidden');
-  document.getElementById('navIconClose').classList.toggle('hidden');
-};
+$(document).ready(function() {
+  const toggleNavView = function() {
+    $('#menu').toggleClass('hidden');
+    $('#nav').toggleClass('menuView');
+    $('#navIconBars').toggleClass('hidden');
+    $('#navIconClose').toggleClass('hidden');
+  };
 
-document.getElementById('navIconBars').addEventListener('click', function() {
-  toggleNavView();
-});
+  $('#navIconBars').on('click', function() {
+    toggleNavView();
+  });
 
-document.getElementById('navIconClose').addEventListener('click', function() {
-  toggleNavView();
+  $('#navIconClose').on('click', function() {
+    toggleNavView();
+  });
 });

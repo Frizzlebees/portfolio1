@@ -100,7 +100,7 @@ body {
   width: 40vh;
   right: 0vh !important;
   top: 0vh !important;
-  background-color: #b3b3cc;
+  background-color: #cccccc;
 }
 
 #nav > #navIconBars {
@@ -114,6 +114,21 @@ body {
   position: absolute;
   top: 8vh;
   right: 45vh;
+}
+
+#menu > ul {
+  margin-top: 8vh;
+}
+
+#menu a {
+  color: inherit;
+}
+
+#menu > ul li {
+  list-style-type: none;
+  margin-bottom: 5vh;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .hidden {
