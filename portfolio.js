@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $('.one, .two, .three, .four, .five, .six').on('click', function() {
-    $('.projectOneModal').modal('show');
+  $('.project-one, .project-two, .project-three, .project-four, .project-five, .project-six').on('click', function() {
+    $('.project-one-modal').modal('show');
   });
 
-  $('.one, .two, .three, .four, .five, .six').dimmer({
+  $('.portfolio-project').dimmer({
     on: 'hover'
   });
 });
