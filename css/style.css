@@ -227,6 +227,31 @@ body {
 }
 .business,
 .composition {
-	width: 48%;
 	display: inline-block;
+	vertical-align: top;
+}
+.business {
+	width: 32%;
+}
+.composition {
+	width: 64%;
+}
+.business p {
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+	line-height: 115px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+	background-color: rgba(0, 0, 0, 0.87);
+	color: white;
+}
+.composition-skills p {
+	display: inline-block;
+	width: 49%;
+	font-size: 19px;
+	padding-left: 5%;
 }
