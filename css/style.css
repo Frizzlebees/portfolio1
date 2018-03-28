@@ -249,6 +249,10 @@ body {
 	background-color: rgba(0, 0, 0, 0.87);
 	color: white;
 }
+.business p:hover {
+	transform: rotatey(360deg);
+	transition: 1s;
+}
 .composition-skills p {
 	display: inline-block;
 	width: 49%;
