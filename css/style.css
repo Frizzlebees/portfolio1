@@ -303,19 +303,51 @@ body {
 /* ============ Contact Style =========== */
 #contact {
 	padding: 40px 0;
+	background-color: rgba(0, 0, 0, 0.87);
 }
 #contact h1 {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 45px;
+	color: #f2f2f2;
 }
 form {
 	width: 50%;
 	margin: auto;
+	font-size: 19px;
+}
+label {
+	color: #f2f2f2;
+	display: block;
+	margin-bottom: 10px;
 }
 input,
 textarea {
 	width: 100%;
+	margin-bottom: 20px !important;
+	border: none;
+	border-bottom: 2px solid #f2f2f2;
+	background: transparent;
+	caret-color: #f2f2f2;
+	color: #f2f2f2;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+button {
+	border-radius: 5px;
+	cursor: pointer;
+	height: 40px;
+	border: 2px solid #f2f2f2;
+	background: transparent;
+	display: block;
+	margin: auto !important;
+	color: #f2f2f2;
+	padding: 0 15px;
+}
+button:hover {
+	opacity: 0.6;
 }
 @media (max-width: 600px) {
 	form {
