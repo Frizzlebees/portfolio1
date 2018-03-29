@@ -10,7 +10,11 @@ $(document).ready(function() {
     toggleNavView();
   });
 
-  $('.nav-icon-close').on('click', function() {
+  // $('.nav-icon-close').on('click', function() {
+  //   toggleNavView();
+  // });
+
+  $('.menu-close').on('click', function() {
     toggleNavView();
   });
 

@@ -129,6 +129,8 @@ body, h1, h2, h3, h4, h5, h6 {
 .menu-items {
 	margin-top: 8vh;
   padding-left: 3px;
+  height: 100vh;
+  position: relative;
 }
 
 .menu-item {
@@ -141,6 +143,15 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .menu-item-description {
   font-size: 10px;
+}
+
+.menu-close {
+  list-style-type: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5vw;
+  left: 33%;
+  margin-top: 95%;
 }
 
 .hidden {
@@ -451,7 +462,7 @@ footer p {
 .timeline-position::after {
   content: '';
   position: absolute;
-  transform: translate(-50%, -185%);
+  transform: translate(-50%, -190%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
