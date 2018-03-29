@@ -14,6 +14,20 @@ $(document).ready(function() {
     toggleNavView();
   });
 
+  // $('.menu-item-home').on('mouseenter mouseleave', function() {
+  //   $('.home-icon').toggleClass('hidden');
+  //   $('.home-icon-description').toggleClass('hidden');
+  // })
+
+  $('.menu-item').on('mouseenter mouseleave', function(e) {
+    for (let child of e.currentTarget.children) {
+      $(child).toggleClass('hidden');
+    }
+  })
+
+
+
+
   // const isElementInViewport = function(el) {
   //   if (typeof jQuery === "function" && el instanceof jQuery) {
   //       el = el[0];
