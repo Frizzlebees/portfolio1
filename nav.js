@@ -1,18 +1,36 @@
 $(document).ready(function() {
   const toggleNavView = function() {
-    $('#menu').toggleClass('hidden');
+    $('.menu').toggleClass('hidden');
     $('#nav').toggleClass('menuView');
-    $('#navIconBars').toggleClass('hidden');
-    $('#navIconClose').toggleClass('hidden');
+    $('.nav-icon-bars').toggleClass('hidden');
+    $('.nav-icon-close').toggleClass('hidden');
   };
 
-  $('#navIconBars').on('click', function() {
+  $('.nav-icon-bars').on('click', function() {
     toggleNavView();
   });
 
-  $('#navIconClose').on('click', function() {
+  // $('.nav-icon-close').on('click', function() {
+  //   toggleNavView();
+  // });
+
+  $('.menu-close').on('click', function() {
     toggleNavView();
   });
+
+  // $('.menu-item-home').on('mouseenter mouseleave', function() {
+  //   $('.home-icon').toggleClass('hidden');
+  //   $('.home-icon-description').toggleClass('hidden');
+  // })
+
+  $('.menu-item').on('mouseenter mouseleave', function(e) {
+    for (let child of e.currentTarget.children) {
+      $(child).toggleClass('hidden');
+    }
+  })
+
+
+
 
   // const isElementInViewport = function(el) {
   //   if (typeof jQuery === "function" && el instanceof jQuery) {
