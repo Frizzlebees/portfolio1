@@ -259,3 +259,26 @@ body {
 	font-size: 19px;
 	padding-left: 5%;
 }
+@media (max-width: 1240px) {
+	.business {
+		width: 40%;
+	}
+	.composition {
+		width: 56%;
+	}
+}
+@media (max-width: 1000px) {
+	.business,
+	.composition {
+		width: 96%;
+	}
+	.business-skills {
+		text-align: center;
+	}
+}
+@media (max-width: 415px) {
+	.business-skills > div {
+		width: 115px;
+		margin: 0 auto 14px auto;
+	}
+}
