@@ -146,13 +146,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 /*================ Portfolio style ================== */
 #portfolio {
-	display: grid;
-	grid-template-columns: 0.5fr 3fr 3fr 3fr 0.5fr;
-	grid-column-gap: 15px;
-	grid-template-rows: 1fr 3fr 3fr 1fr;
-	grid-row-gap: 15px;
-	background: #f2f2f2;
-  padding: 5%;
+  background: #f2f2f2;
   padding: 7%;
 }
 
@@ -247,7 +241,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 /* ============ Skills Style =========== */
 #skills {
@@ -403,16 +397,34 @@ footer p {
 }
 /*================ Experience style ================== */
 #experience {
-  height: 100vh;
-  background: #f2f2f2;
+/*  background: #f2f2f2;*/
+/*  background-image: url('../images/island.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
   padding: 7%;
+  position: relative;
+  z-index: 1;
+}
+
+#experience::before {
+  content: '';
+  background-image: url('../images/island.jpg'); 
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .6;
 }
 
 .experience-wrapper {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
-  grid-template-columns: 5fr 1fr 5fr;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .experience-header {
@@ -426,7 +438,7 @@ footer p {
   font-size: 40px;
 }
 
-.timeline ul {
+.timeline {
   padding: 0;
   margin-top: 5%;
 }
@@ -434,7 +446,7 @@ footer p {
 .timeline-position {
   list-style-type: none;
   width: 5px;
-  margin-left: 20vw;
+  margin-left: 25vw;
   padding-top: 25px;
   background: black;
 }
@@ -452,7 +464,7 @@ footer p {
 .position-details {
   position: relative;
   padding: 15px;
-  background: #cccccc;
+  background: #d9d9d9;
   width: 50vw;
   border-radius: 5px;
 }
@@ -474,6 +486,8 @@ footer p {
   display: inline-block;
   width: 500px;
   bottom: 30px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .timeline-position .position-details {
@@ -483,7 +497,7 @@ footer p {
 .timeline-position .position-details::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #cccccc transparent transparent;
+  border-color: transparent #d9d9d9 transparent transparent;
 }
 
 .timeline-position .position-date {
@@ -495,13 +509,15 @@ footer p {
   left: 45px;
 }
 
-.position {
-  border: solid black 2px;
+.timeline-position:nth-child(odd) .position-details::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #cccccc transparent transparent;
 }
 
-.position-one {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
+.timeline-position:nth-child(odd) .position-date {
+  right: 540px;
+  text-align: right;
 }
 
 .timeline-position:nth-child(even) .position-details {
@@ -523,8 +539,14 @@ footer p {
   left: -439px;
 }
 
-.position-three {
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
+.timeline-position:nth-child(even) .position-details::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #cccccc;
+} 
+
+.timeline-position:nth-child(even) .position-date {
+  left: 45px;
+  text-align: left;
 }
 */
