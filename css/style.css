@@ -300,3 +300,25 @@ body {
 		font-size: 12.7px;
 	}
 }
+/* ============ Contact Style =========== */
+#contact {
+	padding: 40px 0;
+}
+#contact h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 45px;
+}
+form {
+	width: 50%;
+	margin: auto;
+}
+input,
+textarea {
+	width: 100%;
+}
+@media (max-width: 600px) {
+	form {
+		width: 90%;
+	}
+}
