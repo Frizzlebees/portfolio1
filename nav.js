@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  const scroll = new SmoothScroll('a[href*="#"]');
   const toggleNavView = function() {
     $('.menu').toggleClass('hidden');
     $('#nav').toggleClass('menuView');

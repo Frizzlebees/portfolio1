@@ -16,6 +16,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
     <!-- Favicons -->
   </head>
   <body>
@@ -31,27 +32,27 @@
         <ul class="menu-items">
           <li class="menu-item">
            <span class="menu-item"><i class="home icon"></i></span>
-           <span class="menu-item-description hidden"><a href="#home">Home</a></span>
+           <span class="menu-item-description hidden"><a data-scroll href="#home">Home</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="folder open outline icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#portfolio">Portfolio</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#portfolio">Portfolio</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="user outline icon"></i></a></span>
-            <span class="menu-item-description hidden"><a href="#about">About</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#about">About</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="lightbulb outline icon"></i></a></span>
-            <span class="menu-item-description hidden"><a href="#skills">Skills</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#skills">Skills</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="chart line icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#experience">Experience</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#experience">Experience</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="envelope outline icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#contact">Contact</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#contact">Contact</a></span>
           </li>
           <li class="menu-close">
             <i class="bars icon white inverted large"></i>
@@ -333,7 +334,7 @@
       <p>©  FrizzleBees 2018</p>
     </footer>
     </div>
-    <!-- Event Listeners -->
+    <!-- Scripts -->
     <script src="nav.js"></script>
     <script src="portfolio.js"></script>
   </body>
