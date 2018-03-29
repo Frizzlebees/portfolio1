@@ -106,34 +106,37 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .menuView {
 	height: 100vh;
-	width: 40vh;
+	width: 10vh;
 	right: 0vh !important;
 	top: 0vh !important;
+  text-align: center;
 	background-color: #262626;
 }
 
-#nav > #navIconBars {
+.nav-icon-bars {
 	z-index: 1;
 	cursor: pointer;
 }
 
-#nav > #navIconClose {
+.nav-icon-close {
 	z-index: 1;
 	cursor: pointer;
 	position: absolute;
 	top: 8vh;
-	right: 45vh;
+	right: 5vw;
 }
 
-#menu > ul {
+.menu > ul {
 	margin-top: 8vh;
+  padding-left: 3px;
 }
 
-#menu a {
+.menu a {
 	color: inherit;
+  text-align: left;
 }
 
-#menu > ul li {
+.menu > ul li {
 	list-style-type: none;
 	margin-bottom: 5vh;
 	font-size: 18px;
@@ -153,7 +156,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .portfolio-wrapper {
   display: grid;
   grid-template-columns: 0.5fr 3.5fr 3.5fr 3.5fr 0.5fr;
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
   grid-template-rows: 2fr 0.5fr 8fr 8fr;
   grid-row-gap: 15px;
 }
@@ -397,11 +400,6 @@ footer p {
 }
 /*================ Experience style ================== */
 #experience {
-/*  background: #f2f2f2;*/
-/*  background-image: url('../images/island.jpg'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
   padding: 7%;
   position: relative;
   z-index: 1;
@@ -464,9 +462,9 @@ footer p {
 .position-details {
   position: relative;
   padding: 15px;
-  background: #d9d9d9;
+  background: white;
   width: 50vw;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .position-details-company, .position-details-title {
@@ -497,7 +495,7 @@ footer p {
 .timeline-position .position-details::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #d9d9d9 transparent transparent;
+  border-color: transparent white transparent transparent;
 }
 
 .timeline-position .position-date {
