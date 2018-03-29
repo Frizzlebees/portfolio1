@@ -1,5 +1,6 @@
-body {
+body, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
+  font-family: 'Raleway', sans-serif !important;
 }
 /*=============== Home style  =================*/
 #home {
@@ -391,21 +392,65 @@ footer p {
   grid-template-columns: 5fr 1fr 5fr;
 }
 
-#experience .experience-header {
-  margin-bottom: 20px;
+.experience-header {
+  margin: 0;
+}
+
+#experience .divider {
+  margin-bottom: 40px;
 }
 
 .timeline ul {
   padding: 0;
 }
 
-.experience-wrapper .timeline {
-  background-color: blue;
+.timeline-position {
+  list-style-type: none;
   width: 5px;
-  height: 90%;
-  grid-row: 2 / 5;
-  grid-column: 2 / 3;
-  justify-self: center;
+  margin: 0 auto;
+  padding-top: 25px;
+  background: black;
+}
+
+.timeline-position::after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -160%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.position-details {
+  position: relative;
+  padding: 15px;
+  background: #cccccc;
+  width: 400px;
+  height: 200px;
+}
+
+.position-details-company, .position-details-title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.position-details::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  border-style: solid;
+}
+
+.position-date {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  bottom: 24px;
+}
+
+.timeline-position:nth-child(odd) .position-details {
+  left: 45px;
 }
 
 .position {
