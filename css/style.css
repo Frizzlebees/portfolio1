@@ -34,11 +34,13 @@ body {
 }
 /*=============== About style  =================*/
 #about {
-	padding-bottom: 20px;
+	padding: 40px 0;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url('../images/about.png');
 }
 #about h1 {
 	text-align: center;
-	margin: 20px;
 	font-size: 45px;
 }
 .about-content {
@@ -212,7 +214,7 @@ body {
 /* ============ Skills Style =========== */
 #skills {
 	background-color: #f2f2f2;
-	padding: 20px 2%;
+	padding: 40px 2%;
 }
 #skills h1 {
 	text-align: center;
@@ -235,6 +237,9 @@ body {
 }
 .composition {
 	width: 64%;
+}
+.composition h2 {
+	padding-left: 4%;
 }
 .business p {
 	border: 1px solid black;
@@ -274,6 +279,9 @@ body {
 	}
 	.business-skills {
 		text-align: center;
+	}
+	#skills h2 {
+		padding-left: 5%;
 	}
 }
 @media (max-width: 415px) {
