@@ -358,7 +358,7 @@ button:hover {
 footer {
 	text-align: center;
 	padding: 40px 0;
-	background: linear-gradient(to right, #e0aba3, #9fa0bc);
+	background: linear-gradient(to right, #e0aaa5, #d0beca, #9b9fbc);
 }
 footer i.icon {
 	font-size: 40px;
