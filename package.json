@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Rayango/portfolio1#readme",
   "dependencies": {
+    "nodemailer": "^4.6.3",
     "smooth-scroll": "^12.1.5"
   }
 }
