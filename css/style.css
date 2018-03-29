@@ -50,13 +50,19 @@ body {
 	display: inline-block;
 	width: 31%;
 	margin: 1%;
-	background-color: #d2d2d2;
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 }
 #about h2 {
 	font-size: 30px;
 	text-align: center;
 	margin: 10px 0;
+}
+#about h2,
+#about h3,
+#about i,
+#about p {
+	color: #f2f2f2;
 }
 .about-row {
 	margin: 15px 0;
@@ -213,7 +219,6 @@ body {
 }
 /* ============ Skills Style =========== */
 #skills {
-	background-color: #f2f2f2;
 	padding: 40px 2%;
 }
 #skills h1 {
