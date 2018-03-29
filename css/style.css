@@ -354,3 +354,18 @@ button:hover {
 		width: 90%;
 	}
 }
+/* ========== Footer ============  */
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background: linear-gradient(to right, #e0aba3, #9fa0bc);
+}
+footer i.icon {
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 10px;
+}
+footer p {
+	color: #4183c4;
+	margin-top: 20px;
+}
