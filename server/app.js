@@ -6,7 +6,7 @@ const mailer = require('./mailer.js');
 
 const parser = bodyParser.urlencoded({extended: true});
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, '../client')));
 
 app.post('/contact', parser, (req, res) => {
   mailer(req.body.name, req.body.email, req.body.subject, req.body.message);
