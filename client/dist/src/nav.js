@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const scroll = new SmoothScroll('a[href*="#"]');
+  // const scroll = new SmoothScroll('a[href*="#"]');
   const toggleNavView = function() {
     $('.menu').toggleClass('hidden');
     $('#nav').toggleClass('menuView');
@@ -29,6 +29,10 @@ $(document).ready(function() {
       $(child).toggleClass('hidden');
     }
   })
+
+  $('#contact-form').on('submit', function(e) {
+    // e.preventDefault();
+  });
 
 
 
