@@ -1,4 +1,4 @@
 module.exports = {
-  user: 'rayango33@gmail.com',
-  password: 'halo102192'
+  user: 'user@gmail.com', // enter email address here
+  password: 'password' // enter password here
 }
