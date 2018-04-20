@@ -39,11 +39,23 @@ h6 {
 	color: white;
 }
 /*=============== About style  =================*/
-#about {
-	padding: 7%;
+#about::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-size: cover;
 	background-position: bottom;
 	background-image: url('../images/about.png');
+	opacity: 0.7;
+}
+#about {
+	padding: 7%;
+	position: relative;
+	z-index: 1;
 }
 #about h1 {
 	display: inline-block;
@@ -59,7 +71,7 @@ h6 {
 	padding-left: 10px;
 	width: 350px;
 	margin: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 5px;
 }
 #about h2 {
@@ -272,6 +284,7 @@ h6 {
 /* ============ Skills Style =========== */
 #skills {
 	padding: 7%;
+	background: #f2f2f2;
 }
 #skills h1 {
 	display: inline-block;
