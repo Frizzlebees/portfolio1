@@ -16,6 +16,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="smooth-scroll-master/dist/js/smooth-scroll.js"></script>
     <!-- Favicons -->
   </head>
   <body>
@@ -24,34 +25,31 @@
       <div class="nav-icon-bars">
         <i class="bars icon grey big"></i>
       </div>
-<!--       <div class="nav-icon-close hidden"">
-        <i class="close icon white inverted big"></i>
-      </div> -->
       <div class="menu hidden">
         <ul class="menu-items">
           <li class="menu-item">
            <span class="menu-item"><i class="home icon"></i></span>
-           <span class="menu-item-description hidden"><a href="#home">Home</a></span>
+           <span class="menu-item-description hidden"><a data-scroll href="#home">Home</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="folder open outline icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#portfolio">Portfolio</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#portfolio">Portfolio</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="user outline icon"></i></a></span>
-            <span class="menu-item-description hidden"><a href="#about">About</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#about">About</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="lightbulb outline icon"></i></a></span>
-            <span class="menu-item-description hidden"><a href="#skills">Skills</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#skills">Skills</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="chart line icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#experience">Experience</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#experience">Experience</a></span>
           </li>
           <li class="menu-item">
             <span class="menu-item"><i class="envelope outline icon"></i></span>
-            <span class="menu-item-description hidden"><a href="#contact">Contact</a></span>
+            <span class="menu-item-description hidden"><a data-scroll href="#contact">Contact</a></span>
           </li>
           <li class="menu-close">
             <i class="bars icon white inverted large"></i>
@@ -64,7 +62,7 @@
       <div class="home-content">
         <h3>I am Jonathan</h3>
         <h1 class="animated bounceInDown">Photographer</h1>
-        <a href="#portfolio"><i class="angle double down icon animated pulse infinite"></i></a>
+        <a data-scroll href="#portfolio"><i class="angle double down icon animated pulse infinite"></i></a>
       </div>
     </div>
     <!-- Portfolio Content -->
@@ -72,7 +70,7 @@
       <div class="portfolio-wrapper">
         <div class="portfolio-header">
           <h1>Portfolio</h1>
-        </div>
+        </div>  
         <div class="portfolio-project project-one">
           <div class="ui dimmer">
             <div class="dimmer-content">
@@ -142,7 +140,7 @@
           </div>
           <img src="./images/frizzlebee_1024.png" />
         </div>
-      </div>
+      </div>  
     </div>
     <!-- About Content -->
     <div id="about">
@@ -207,59 +205,59 @@
     </div>
     <!-- Skills Content -->
     <div id="skills">
-      <h1>Skills</h1>
-      <div class="skills-container">
-        <div class="business">
-          <h2><i class="briefcase icon"></i>Business</h2>
-          <div class="business-skills">
-            <div>
-              <p>Communication</p>
-              <p>Leadership</p>
-              <p>Entrepreneurial</p>
-            </div>
-            <div>
-              <p>Marketing</p>
-              <p>Social Media</p>
-              <p>Training</p>
-            </div>
-            <div>
-              <p>Web</p>
-              <p>Public Speaking</p>
-              <p>Cold Calling</p>
-            </div>
-          </div>
-        </div>
-        <div class="composition">
-          <h2><i class="camera retro icon"></i>Composition</h2>
-          <div class="composition-skills">
-            <p><i class="folder open icon"></i>Cameras</p>
-            <p><i class="folder open icon"></i>Color</p>
-            <p><i class="folder open icon"></i>Cropping</p>
-            <p><i class="folder open icon"></i>Design</p>
-            <p><i class="folder open icon"></i>Digital Imaging</p>
-            <p><i class="folder open icon"></i>Editing</p>
-            <p><i class="folder open icon"></i>Exposure</p>
-            <p><i class="folder open icon"></i>Fashion</p>
-            <p><i class="folder open icon"></i>Film</p>
-            <p><i class="folder open icon"></i>High-Resolution Imaging</p>
-            <p><i class="folder open icon"></i>Image Manipulation</p>
-            <p><i class="folder open icon"></i>Lighting</p>
-            <p><i class="folder open icon"></i>Locations</p>
-            <p><i class="folder open icon"></i>Photo Shoots</p>
-            <p><i class="folder open icon"></i>Preservation</p>
-            <p><i class="folder open icon"></i>Printing</p>
-            <p><i class="folder open icon"></i>Retouching</p>
-            <p><i class="folder open icon"></i>White Balance</p>
-          </div>
-        </div>
-      </div>
-    </div>
+     <h1>Skills</h1>
+     <div class="skills-container">
+       <div class="business">
+         <h2><i class="briefcase icon"></i>Business</h2>
+         <div class="business-skills">
+           <div>
+             <p>Communication</p>
+             <p>Leadership</p>
+             <p>Entrepreneurial</p>
+           </div>
+           <div>
+             <p>Marketing</p>
+             <p>Social Media</p>
+             <p>Training</p>
+           </div>
+           <div>
+             <p>Web</p>
+             <p>Public Speaking</p>
+             <p>Cold Calling</p>
+           </div>
+         </div>
+       </div>
+       <div class="composition">
+         <h2><i class="camera retro icon"></i>Composition</h2>
+         <div class="composition-skills">
+           <p><i class="folder open icon"></i>Cameras</p>
+           <p><i class="folder open icon"></i>Color</p>
+           <p><i class="folder open icon"></i>Cropping</p>
+           <p><i class="folder open icon"></i>Design</p>
+           <p><i class="folder open icon"></i>Digital Imaging</p>
+           <p><i class="folder open icon"></i>Editing</p>
+           <p><i class="folder open icon"></i>Exposure</p>
+           <p><i class="folder open icon"></i>Fashion</p>
+           <p><i class="folder open icon"></i>Film</p>
+           <p><i class="folder open icon"></i>High-Resolution Imaging</p>
+           <p><i class="folder open icon"></i>Image Manipulation</p>
+           <p><i class="folder open icon"></i>Lighting</p>
+           <p><i class="folder open icon"></i>Locations</p>
+           <p><i class="folder open icon"></i>Photo Shoots</p>
+           <p><i class="folder open icon"></i>Preservation</p>
+           <p><i class="folder open icon"></i>Printing</p>
+           <p><i class="folder open icon"></i>Retouching</p>
+           <p><i class="folder open icon"></i>White Balance</p>
+         </div>
+       </div>
+     </div>
+   </div>
     <!-- Experience Content -->
     <div id="experience">
       <div class="experience-wrapper">
         <div class="experience-header">
           <h1>Experience</h1>
-        </div>
+        </div>  
         <div class="timeline-wrapper">
           <ul class="timeline">
             <li class="timeline-position">
@@ -306,20 +304,20 @@
             </li>
           </ul>
         </div>
-    </div>
+    </div>  
     </div>
     <!-- Contact Form -->
     <div id="contact">
       <h1>Get In Touch</h1>
-      <form action="" method="post"> <!-- Python file -->
+      <form id="contact-form" action="/contact" method="post"> 
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
+        <input id="contact-name" name="name" type="text" required>
         <label for="email">Email</label>
-        <input id="email" name="email" type="text" required>
+        <input id="contact-email" name="email" type="text" required>
         <label for="subject">Subject</label>
-        <input id="subject" name="subject" type="text" required>
+        <input id="contact-subject" name="subject" type="text" required>
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="contact-message" name="message" rows="4" required></textarea>
         <button type="submit" name="button">Submit</button>
       </form>
     </div>
@@ -334,7 +332,7 @@
       <p>©  FrizzleBees 2018</p>
     </footer>
     </div>
-    <!-- Event Listeners -->
+    <!-- Scripts -->
     <script src="nav.js"></script>
     <script src="portfolio.js"></script>
   </body>
