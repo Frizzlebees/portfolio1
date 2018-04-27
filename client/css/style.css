@@ -396,7 +396,7 @@ h6 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 .experience-wrapper {
@@ -441,9 +441,10 @@ h6 {
 .position-details {
 	position: relative;
 	padding: 15px;
-	background: white;
+	background: rgba(0, 0, 0, 0.6);
 	width: 50vw;
 	border-radius: 7px;
+	color: #f2f2f2;
 }
 
 .position-details-company,
@@ -475,7 +476,7 @@ h6 {
 .timeline-position .position-details::before {
 	left: -15px;
 	border-width: 8px 16px 8px 0;
-	border-color: transparent white transparent transparent;
+	border-color: transparent rgba(0, 0, 0, 0.6) transparent transparent;
 }
 
 .timeline-position .position-date {
