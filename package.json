@@ -2,10 +2,9 @@
 	"name": "portfolio1",
 	"version": "1.0.0",
 	"description": "portfolio website",
-	"main": "index.html",
+	"main": "index.js",
 	"scripts": {
-		"start": "node ./server/app.js",
-		"test": "npm test"
+		"start": "nodemon server/index.js"
 	},
 	"repository": {
 		"type": "git",
