@@ -13,4 +13,4 @@ app.post('/contact', parser, (req, res) => {
   res.redirect('/');
 });
 
-app.listen(3000, () => console.log('Listening on port 3000...', __dirname));
+app.listen(3000, () => console.log('Listening on port 3000...'));
