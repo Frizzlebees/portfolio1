@@ -131,7 +131,7 @@ h6 {
 .menuView {
 	height: 100vh;
 	width: 13vh;
-	right: 0vh !important;
+	left: 0vh !important;
 	top: 0vh !important;
 	text-align: center;
 	background-color: #262626;
@@ -159,7 +159,7 @@ h6 {
 
 .menu-item {
 	list-style-type: none;
-	margin-bottom: 5vh;
+	margin-bottom: 8vh;
 	font-size: 18px;
 	color: white;
 	cursor: pointer;
@@ -278,13 +278,30 @@ h6 {
 	margin-top: 5px !important;
 }
 
-.slides {
+.slideshow-container {
+	height: 60vh;
+	width: 60vw !important;
+	position: relative;
 	margin: auto;
 }
 
-.slides img {
-	width: 50vw;
-	height: 50vh;
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.previous-slide, .next-slide {
+	position: absolute;
+	top: 49%;
+	cursor: pointer;
+}
+
+.previous-slide {
+  left: 5%;
+}
+
+.next-slide {
+	right: 5%;
 }
 
 .hidden {

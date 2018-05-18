@@ -1,25 +1,25 @@
 {
-	"name": "portfolio1",
-	"version": "1.0.0",
-	"description": "portfolio website",
-	"main": "index.js",
-	"scripts": {
-		"start": "nodemon server/index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Rayango/portfolio1.git"
-	},
-	"author": "Sky Jacobson & Ryan Ngo",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Rayango/portfolio1/issues"
-	},
-	"homepage": "https://github.com/Rayango/portfolio1#readme",
-	"dependencies": {
-		"body-parser": "^1.18.2",
-		"express": "^4.16.3",
-		"nodemailer": "^4.6.3",
-		"nodemon": "^1.17.3"
-	}
+  "name": "portfolio1",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rayango/portfolio1.git"
+  },
+  "author": "Sky Jacobson & Ryan Ngo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rayango/portfolio1/issues"
+  },
+  "homepage": "https://github.com/Rayango/portfolio1#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.3",
+    "nodemon": "^1.17.3"
+  }
 }

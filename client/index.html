@@ -52,7 +52,7 @@
             <span class="menu-item-description hidden"><a data-scroll href="#contact">Contact</a></span>
           </li>
           <li class="menu-close">
-            <i class="bars icon white inverted large"></i>
+            <i class="times icon white inverted large"></i>
           </li>
         </ul>
       </div>
@@ -94,15 +94,21 @@
               Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
             </p>
           </div>
-          <div class="image content slideshow-container">
-            <div class="slides">
-              <img class="image" src="./images/about.jpg">
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="previous-slide">
+              <i class="angle left icon big"></i>
             </div>
-            <div class="slides hidden">
+            <div class="slide">  
+              <img class="image" src="./images/about.png">
+            </div>
+            <div class="slide hidden">  
               <img class="image" src="./images/home.jpg">
             </div>
-            <div class="slides hidden">
+            <div class="slide hidden">  
               <img class="image" src="./images/island.jpg">
+            </div>  
+            <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+              <i class="angle right icon big"></i>
             </div>
           </div>
         </div>
