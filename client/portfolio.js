@@ -14,7 +14,11 @@ const portfolio = {
       portfolio.view.toggleSlideView();
     },
     goToPreviousSlide: () => {
-
+      portfolio.view.toggleSlideView();
+      if (portfolio.carousel.currentSlide != 0) {
+        portfolio.carousel.currentSlide--;
+      }
+      portfolio.view.toggleSlideView();
     }
   },
   view: {

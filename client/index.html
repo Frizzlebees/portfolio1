@@ -22,7 +22,7 @@
   <body>
     <!-- Nav Content -->
     <div id="nav">
-      <div class="nav-icon-bars">
+      <div class="nav-icon-bars" onclick="toggleNavView()">
         <i class="bars icon grey big"></i>
       </div>
       <div class="menu hidden">
@@ -50,9 +50,6 @@
           <li class="menu-item">
             <span class="menu-item"><i class="envelope outline icon"></i></span>
             <span class="menu-item-description hidden"><a data-scroll href="#contact">Contact</a></span>
-          </li>
-          <li class="menu-close">
-            <i class="times icon white inverted large"></i>
           </li>
         </ul>
       </div>
@@ -95,21 +92,28 @@
             </p>
           </div>
           <div class="image content slideshow-container" data-project-name="portfolio">
-            <div class="previous-slide">
-              <i class="angle left icon big"></i>
-            </div>
-            <div class="slide">  
-              <img class="image" src="./images/about.png">
-            </div>
-            <div class="slide hidden">  
-              <img class="image" src="./images/home.jpg">
-            </div>
-            <div class="slide hidden">  
-              <img class="image" src="./images/island.jpg">
+            <div class="slideshow-image">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.png">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
             </div>  
-            <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
-              <i class="angle right icon big"></i>
-            </div>
+            <div class="slideshow-indicator">
+              <span class="slideshow-dot">o</span>
+              <span class="slideshow-dot">o</span>
+              <span class="slideshow-dot">o</span>
+            </div>  
           </div>
         </div>
         <div class="portfolio-project project-two">
