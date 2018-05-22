@@ -279,14 +279,17 @@ h6 {
 }
 
 .slideshow-container {
-	height: 60vh;
+	height: 75vh;
 	width: 60vw !important;
-	position: relative;
 	margin: auto;
 }
 
-.slide {
-  height: 70%;
+.slideshow-picture {
+	position: relative;
+}
+
+.slide, .previous-slide, .next-slide {
+  height: 100%;
 }
 
 .slide img {
@@ -296,30 +299,49 @@ h6 {
 
 .previous-slide, .next-slide {
 	position: absolute;
-	top: 49%;
+	width: 10%;
+	top: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
 }
 
+.previous-slide:hover, .next-slide:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
 .previous-slide {
-  left: 5%;
+	left: 0%;
 }
 
 .next-slide {
-	right: 5%;
+	right: 0%;
 }
 
-.slideshow-container {
-	display: block;
+.slideshow-indicator {
+	height: 10vh;
+	text-align: center;
 }
 
 .slideshow-dot {
-	background-color: white;
-	border-radius: 50%;
+	height: 15px;
+  width: 15px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slideshow-dot.active, .slideshow-dot:hover {
+  background-color: #808080;
 }
 
 .hidden {
 	display: none;
 }
+
 /* ============ Skills Style =========== */
 #skills {
 	padding: 7%;
