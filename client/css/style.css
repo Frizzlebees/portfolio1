@@ -123,7 +123,7 @@ h6 {
 /*================ Navigation style ================== */
 #nav {
 	position: fixed;
-	right: 10vh;
+	right: 8vh;
 	top: 8vh;
 	z-index: 2;
 }
@@ -131,7 +131,7 @@ h6 {
 .menuView {
 	height: 100vh;
 	width: 11vh;
-	left: 0vh !important;
+	right: 0vh !important;
 	top: 0vh !important;
 	text-align: center;
 	background-color: #262626;
