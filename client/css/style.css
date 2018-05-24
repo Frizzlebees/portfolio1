@@ -189,9 +189,9 @@ h6 {
 
 .portfolio-wrapper {
 	display: grid;
-	grid-template-columns: 0.1fr 3.5fr 3.5fr 3.5fr 0.1fr;
-	grid-column-gap: 5vw;
-	grid-template-rows: 0.5fr 4fr 4fr;
+	grid-template-columns: 0.1fr 4fr 4fr 4fr 0.1fr;
+	grid-column-gap: 4vw;
+	grid-template-rows: 0.5fr 3fr 3fr;
 	grid-row-gap: 8vh;
 }
 
