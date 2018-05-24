@@ -249,9 +249,17 @@ h6 {
 
 .portfolio-project .dimmer-content {
 	padding: 5%;
-	margin-top: 20%;
+	margin-top: 5%;
 	height: 100%;
 	color: white;
+}
+
+.dimmer-title {
+	font-size: 2.5vw;
+}
+
+.dimmer-description {
+	font-size: 1.5vw;
 }
 
 .portfolio-modal {
@@ -286,6 +294,13 @@ h6 {
 
 .slideshow-picture {
 	position: relative;
+	height: 100%;
+}
+
+@media (max-width: 1000px) {
+	.slideshow-container {
+		width: 85vw !important;
+	}
 }
 
 .slide, .previous-slide, .next-slide {
@@ -476,7 +491,7 @@ h6 {
 	list-style-type: none;
 	width: 5px;
 	margin-left: 25vw;
-	padding-top: 25px;
+	padding-top: 5vh;
 	background: black;
 }
 
@@ -500,15 +515,24 @@ h6 {
 }
 
 .position-details-company,
-.position-details-title {
+.position-details-title,
+.position-details-length {
 	margin: 0;
 	margin-bottom: 5px;
+}
+
+.position-details-title {
+	font-weight: 900;
+}
+
+.position-details-length {
+	margin-bottom: 5%;
 }
 
 .position-details::before {
 	content: '';
 	position: absolute;
-	bottom: 15px;
+	bottom: 13px;
 	border-style: solid;
 }
 
@@ -519,6 +543,21 @@ h6 {
 	bottom: 30px;
 	font-size: 20px;
 	font-weight: 900;
+}
+
+@media (max-width: 950px) {
+  .position-date {
+  	display: none;
+  }
+  .timeline-position {
+  	margin-left: 5vw;
+  }
+  .position-details {
+  	width: 70vw;
+  }
+  .position-details::before {
+  	bottom: 34px;
+  }
 }
 
 .timeline-position .position-details {
