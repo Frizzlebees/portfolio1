@@ -18,12 +18,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
     <script src="smooth-scroll-master/dist/js/smooth-scroll.js"></script>
     <!-- Favicons -->
+
   </head>
   <body>
     <!-- Nav Content -->
     <div id="nav">
-      <div class="nav-icon-bars">
-        <i class="bars icon grey big"></i>
+      <div class="nav-icon-bars" onclick="toggleNavView()">
+        <i class="bars icon grey inverted big"></i>
       </div>
       <div class="menu hidden">
         <ul class="menu-items">
@@ -51,9 +52,6 @@
             <span class="menu-item"><i class="envelope outline icon"></i></span>
             <span class="menu-item-description hidden"><a data-scroll href="#contact">Contact</a></span>
           </li>
-          <li class="menu-close">
-            <i class="bars icon white inverted large"></i>
-          </li>
         </ul>
       </div>
     </div>
@@ -71,7 +69,7 @@
         <div class="portfolio-header">
           <h1>Portfolio</h1>
         </div>
-        <div class="portfolio-project project-one">
+        <div class="portfolio-project project-one" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -94,19 +92,32 @@
               Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
             </p>
           </div>
-          <div class="image content slideshow-container">
-            <div class="slides">
-              <img class="image" src="./images/about.jpg">
-            </div>
-            <div class="slides hidden">
-              <img class="image" src="./images/home.jpg">
-            </div>
-            <div class="slides hidden">
-              <img class="image" src="./images/island.jpg">
-            </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
           </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
         </div>
-        <div class="portfolio-project project-two">
+        <div class="portfolio-project project-two" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -115,7 +126,46 @@
           </div>
           <img src="./images/frizzlebee_1024.png" />
         </div>
-        <div class="portfolio-project project-three">
+        <div class="ui basic modal portfolio-modal project-two-modal">
+          <div class="modal-header">
+            <h1 class="modal-header-title">Portfolio Project</h1>
+            <i class="close icon big modal-header-icon"></i>
+          </div>
+          </h2>
+          <div class="modal-description scrolling content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+            </p>
+            <p>
+              Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+            </p>
+          </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
+          </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
+        </div>
+        <div class="portfolio-project project-three" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -124,7 +174,46 @@
           </div>
           <img src="./images/frizzlebee_1024.png" />
         </div>
-        <div class="portfolio-project project-four">
+        <div class="ui basic modal portfolio-modal project-three-modal">
+          <div class="modal-header">
+            <h1 class="modal-header-title">Portfolio Project</h1>
+            <i class="close icon big modal-header-icon"></i>
+          </div>
+          </h2>
+          <div class="modal-description scrolling content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+            </p>
+            <p>
+              Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+            </p>
+          </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
+          </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
+        </div>
+        <div class="portfolio-project project-four" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -133,7 +222,46 @@
           </div>
           <img src="./images/frizzlebee_1024.png" />
         </div>
-        <div class="portfolio-project project-five">
+        <div class="ui basic modal portfolio-modal project-four-modal">
+          <div class="modal-header">
+            <h1 class="modal-header-title">Portfolio Project</h1>
+            <i class="close icon big modal-header-icon"></i>
+          </div>
+          </h2>
+          <div class="modal-description scrolling content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+            </p>
+            <p>
+              Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+            </p>
+          </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
+          </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
+        </div>
+        <div class="portfolio-project project-five" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -142,7 +270,46 @@
           </div>
           <img src="./images/frizzlebee_1024.png" />
         </div>
-        <div class="portfolio-project project-six">
+        <div class="ui basic modal portfolio-modal project-five-modal">
+          <div class="modal-header">
+            <h1 class="modal-header-title">Portfolio Project</h1>
+            <i class="close icon big modal-header-icon"></i>
+          </div>
+          </h2>
+          <div class="modal-description scrolling content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+            </p>
+            <p>
+              Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+            </p>
+          </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
+          </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
+        </div>
+        <div class="portfolio-project project-six" onclick="portfolio.handlers.setCurrentCarousel(event.target)">
           <div class="ui dimmer">
             <div class="dimmer-content">
               <h2 class="ui inverted dimmer-title">Portfolio Website</h2>
@@ -150,6 +317,45 @@
             </div>
           </div>
           <img src="./images/frizzlebee_1024.png" />
+        </div>
+        <div class="ui basic modal portfolio-modal project-six-modal">
+          <div class="modal-header">
+            <h1 class="modal-header-title">Portfolio Project</h1>
+            <i class="close icon big modal-header-icon"></i>
+          </div>
+          </h2>
+          <div class="modal-description scrolling content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Nunc dignissim velit et magna mattis, vel aliquam erat tristique. Nulla pulvinar nulla in risus rhoncus, non venenatis nisl commodo. Nam sit amet nibh vitae ligula elementum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et fermentum erat. Integer a ante efficitur enim auctor sagittis tristique in augue. Pellentesque in facilisis nisl. Nam elementum sem id felis pulvinar volutpat. Nunc interdum dapibus justo sit amet sagittis. Morbi nec rutrum libero, nec egestas mauris. Duis mollis imperdiet neque, eget luctus arcu lacinia euismod. In scelerisque efficitur condimentum.
+            </p>
+            <p>
+              Suspendisse potenti. Mauris leo erat, varius at porttitor in, suscipit eu erat. Aenean tristique mi et arcu volutpat finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam interdum velit lectus, nec malesuada lectus varius sit amet. Quisque pulvinar nisl sit amet leo viverra, sagittis consectetur odio accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Sed accumsan pulvinar finibus.
+            </p>
+          </div>
+          <div class="image content slideshow-container" data-project-name="portfolio">
+            <div class="slideshow-picture">
+              <div class="previous-slide" onclick="portfolio.handlers.goToPreviousSlide()">
+                <i class="angle left icon big"></i>
+              </div>
+              <div class="slide">  
+                <img class="image" src="./images/about.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/home.jpg">
+              </div>
+              <div class="slide hidden">  
+                <img class="image" src="./images/island.jpg">
+              </div>  
+              <div class="next-slide" onclick="portfolio.handlers.goToNextSlide()">
+                <i class="angle right icon big"></i>
+              </div>
+            </div>  
+          </div>
+          <div class="slideshow-indicator">
+            <span class="slideshow-dot active"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+          </div>  
         </div>
       </div>
     </div>
@@ -273,11 +479,14 @@
           <ul class="timeline">
             <li class="timeline-position">
               <div class="position-details">
-                <h2 class="position-details-company">
-                  Google Inc.
+                <h2 class="position-details-title">
+                  Software Engineer 
                 </h2>
-                <h4 class="position-details-title">
-                  Software Engineer
+                <h4 class="position-details-company">
+                  Google Inc.
+                </h4>
+                <h4 class="position-details-length">
+                  01/2018 - Present
                 </h4>
                 <p class="position-details-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor.
@@ -287,11 +496,14 @@
             </li>
             <li class="timeline-position">
               <div class="position-details">
-                <h2 class="position-details-company">
-                  Google Inc.
-                </h2>
-                <h4 class="position-details-title">
+                <h2 class="position-details-title">
                   Software Engineer
+                </h2>
+                <h4 class="position-details-company">
+                  Google Inc.
+                </h4>
+                <h4 class="position-details-length">
+                   08/2017 - 01/2018
                 </h4>
                 <p class="position-details-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus.
@@ -301,11 +513,14 @@
             </li>
             <li class="timeline-position">
               <div class="position-details">
-                <h2 class="position-details-company">
-                  Google Inc.
-                </h2>
-                <h4 class="position-details-title">
+                <h2 class="position-details-title">
                   Software Engineer
+                </h2>
+                <h4 class="position-details-company">
+                  Google Inc.
+                </h4>
+                <h4 class="position-details-length">
+                  08/2016 - 07/2017
                 </h4>
                 <p class="position-details-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Proin in nisi ut nulla scelerisque suscipit. Donec commodo faucibus nisi eu luctus. Proin interdum facilisis odio, eget viverra dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit, nisl id accumsan faucibus, magna dolor convallis leo, at porttitor ipsum felis eu purus.
