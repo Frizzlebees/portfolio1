@@ -1,11 +1,12 @@
-# Portfolio 
+# Portfolio
 
 ## Setup
+
 From within the root directory:
 
 ```sh
 npm install
-nodemon server/app.js
+npm start
 ```
 
 You can now go to `127.0.0.1:3000` to see the website.
